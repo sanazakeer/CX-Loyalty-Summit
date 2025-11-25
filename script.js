@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ----------------- Speakers data + render ----------------- */
   const speakers = [
-    { id:1, name:'Aisha Al Harthy', title:'Head of CX, Retail', tag:'cx', bio:'Aisha leads CX transformation initiatives across retail and e-commerce, focusing on customer journeys and loyalty.', img:'/static/images/aisha.avif' },
-    { id:2, name:'Omar Rahman', title:'VP Loyalty, Telecom', tag:'loyalty', bio:'Omar specialises in loyalty programs for large telcos, increasing retention through data-driven offers.', img:'/static/images/omar.jpg' },
-    { id:3, name:'Sara Mahmoud', title:'Head Data & Analytics', tag:'data', bio:'Sara builds data-driven CX strategies to personalize experiences at scale.', img:'/static/images/sara.avif' },
-    { id:4, name:'Rashid Khan', title:'Chief Digital Officer', tag:'cx', bio:'Rashid focuses on digital journeys and platform-driven customer experience.', img:'/static/images/rashid.jpg' },
-    { id:5, name:'Nora Al Saud', title:'Head Loyalty Programs', tag:'loyalty', bio:'Nora created successful loyalty ecosystems across hospitality and retail.', img:'/static/images/nora.avif' },
-    { id:6, name:'Khaled Ibrahim', title:'Customer Insights Lead', tag:'data', bio:'Khaled turns insights into action with pragmatic analytics approaches.', img:'/static/images/khalid.avif' }
+    { id:1, name:'Aisha Al Harthy', title:'Head of CX, Retail', tag:'cx', bio:'Aisha leads CX transformation initiatives across retail and e-commerce, focusing on customer journeys and loyalty.', img:'static/images/aisha.avif' },
+    { id:2, name:'Omar Rahman', title:'VP Loyalty, Telecom', tag:'loyalty', bio:'Omar specialises in loyalty programs for large telcos, increasing retention through data-driven offers.', img:'static/images/omar.jpg' },
+    { id:3, name:'Sara Mahmoud', title:'Head Data & Analytics', tag:'data', bio:'Sara builds data-driven CX strategies to personalize experiences at scale.', img:'static/images/sara.avif' },
+    { id:4, name:'Rashid Khan', title:'Chief Digital Officer', tag:'cx', bio:'Rashid focuses on digital journeys and platform-driven customer experience.', img:'static/images/rashid.jpg' },
+    { id:5, name:'Nora Al Saud', title:'Head Loyalty Programs', tag:'loyalty', bio:'Nora created successful loyalty ecosystems across hospitality and retail.', img:'static/images/nora.avif' },
+    { id:6, name:'Khaled Ibrahim', title:'Customer Insights Lead', tag:'data', bio:'Khaled turns insights into action with pragmatic analytics approaches.', img:'static/images/khalid.avif' }
   ];
   const grid = document.getElementById('speakersGrid');
   function renderSpeakers(list) {
@@ -228,3 +228,4 @@ document.addEventListener('DOMContentLoaded', function () {
   function throttle(fn, t){ let last = 0; return function(...a){ const now = Date.now(); if (now-last>t){ last = now; fn.apply(this,a); } }; }
   function debounce(fn, t){ let id; return function(...a){ clearTimeout(id); id = setTimeout(()=>fn.apply(this,a), t); }; }
 });
+
