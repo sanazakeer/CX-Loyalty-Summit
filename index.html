@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CX & Loyalty Summit — MENA</title>
+  <link rel="icon" type="image/x-icon" href="/static/images/logo.png">
+  <meta name="description" content="2nd Annual CX & Loyalty Summit MENA — speakers, agenda, sponsors, registration" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+
+  <!-- Left top fixed logo -->
+  <a class="logo-fixed" href="#home" aria-label="Home — CX & Loyalty Summit">
+    <img src="/static/images/logo.png" alt="Event logo" />
+  </a>
+
+  <!-- Heade -->
+  <header class="site-header" role="banner" aria-label="Main header">
+    <nav id="mainNav" class="nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home" data-scroll>Home</a></li>
+        <li><a href="#speakers" data-scroll>Speakers</a></li>
+        <li><a href="#agenda" data-scroll>Agenda</a></li>
+        <li><a href="#sponsors" data-scroll>Sponsors</a></li>
+        <li><a href="#tickets" data-scroll>Tickets</a></li>
+        <li><a href="#contact" data-scroll>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions" aria-hidden="false">
+      <a class="btn primary" href="#register" data-scroll>Register</a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="video-wrap" aria-hidden="true">
+        <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="/mnt/data/0c1700f3-9e8a-4353-8f84-4369d63a97c4.png">
+          <source src="/static/videos/herovid.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay" aria-hidden="true"></div>
+
+        <canvas id="bgParticles" class="particles-canvas" aria-hidden="true"></canvas>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">2nd Annual</p>
+          <h1>Driving revenue by building relationships through CX transformation &amp; brand loyalty</h1>
+          <p class="lead">Join CX leaders from across MENA for two days of case studies, panels, and workshops focused on transforming customer journeys and growing lifetime value.</p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#tickets" data-scroll>Buy Tickets</a>
+            <a class="btn ghost" href="/mnt/data/6e5b13a4-1147-439f-9e34-689b17e9ac7a.docx" download>Download Brochure</a>
+          </div>
+
+          <ul class="meta-list">
+            <li><strong>Date</strong> 1–2 Nov 2023</li>
+            <li><strong>Location</strong> Dubai, UAE</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <img src="/static/images/speaker.png" alt="Event visual" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <section id="speakers" class="section container" aria-label="Speakers">
+      <div class="section-head">
+        <h3>Speakers</h3>
+        <p class="muted">Industry leaders, CX innovators, and loyalty experts</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Speaker filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cx">Customer Experience</button>
+        <button class="filter-btn" data-filter="loyalty">Loyalty</button>
+        <button class="filter-btn" data-filter="data">Data & Analytics</button>
+      </div>
+
+      <div id="speakersGrid" class="speakers-grid" aria-live="polite"></div>
+
+      <div class="center">
+        <button id="loadMore" class="btn ghost">Load more speakers</button>
+      </div>
+    </section>
+
+    <!-- AGENDA -->
+    <section id="agenda" class="section grey" aria-label="Agenda">
+      <div class="container">
+        <div class="section-head">
+          <h3>Agenda</h3>
+          <p class="muted">Two-day program with keynotes, panels and workshops</p>
+        </div>
+
+        <div class="agenda-tabs" role="tablist">
+          <button class="agenda-tab active" data-day="1" role="tab" aria-selected="true">Day 1</button>
+          <button class="agenda-tab" data-day="2" role="tab">Day 2</button>
+        </div>
+
+        <div id="agendaContent" class="agenda-content" role="region" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- TOPIC HIGHLIGHTS -->
+    <section id="highlights" class="highlights-section" aria-label="Topic Highlights">
+      <h2 class="highlights-title">Topic Highlights</h2>
+      
+      <div class="highlights-grid">
+
+        <div class="highlights-quarter highlights-text">
+          <ul>
+            <li>Corporate Culture Focus: Top tips to successfully spearhead Customer Experience Transformation internally</li>
+            <li>Brand communities driving Loyalty, Retention &amp; Advocacy - How to transform your loyal customers to brand advocates</li>
+            <li>Delivering the 'Unattainable' CX dream and transformation towards Hyper Personalization</li>
+            <li>Unveiling how exceptional brands retain their customers and build loyalty</li>
+            <li>How to simultaneously improve Customer Experience and Operational Excellence to make customers loyal</li>
+            <li>Using Data, CRM, and Marketing Automation to drive friction-free experiences</li>
+            <li>Multichannel Focus: Strategies to deliver a world-class customer experience across multiple channels</li>
+          </ul>
+        </div>
+
+        <!-- 2nd Quarter: Video -->
+        <div class="highlights-quarter highlights-video">
+          <video width="100%" height="100%" autoplay muted loop playsinline>
+            <source src="/static/videos/confrance1.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <!-- 3rd Quarter: Video -->
+        <div class="highlights-quarter highlights-video">
+          <video width="100%" height="100%" autoplay muted loop playsinline>
+            <source src="/static/videos/confrance2.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <!-- 4th Quarter: Right text list -->
+        <div class="highlights-quarter highlights-text">
+          <ul>
+            <li>Driving Customer Loyalty and Top-line revenue through Gamification</li>
+            <li>Strategies to tailor the multi-channel experience while delivering a consistent Brand promise</li>
+            <li>Linking Voice of the Employee and Voice of the Customer - A critical key to CX success</li>
+            <li>Using social media to improve brand perception and shape the Customer Experience</li>
+            <li>Exploring advances in Customer Analytics and Segmentation – Getting to really know your customer</li>
+            <li>Ensuring effective complaint handling as the foundation of a Customer Retention Strategy</li>
+            <li>How loyalty programs boost revenue and how to measure it</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
+    <section id="sponsors" class="section container" aria-label="Sponsors">
+      <div class="section-head">
+        <h3>Why Sponsor?</h3>
+        <p class="muted">2nd Annual CX &amp; Loyalty Summit MENA 2023 presents the perfect opportunity for solution providers to engage with key decision-makers such as CXOs, Heads of Marketing, Heads of Customer Experience, Heads of Loyalty Programs, etc., from industries including BFSI, Retail &amp; E‑Commerce, Telco, Hospitality, Travel &amp; Tourism, Aviation, CPG and more — differentiate your product and put forward your value proposition in this crowded marketplace.</p>
+      </div>
+
+      <p class="muted">Some of the key reasons why you should sponsor:</p>
+
+      <ul class="sponsor-reasons">
+        <li><strong>Demonstrate Thought Leadership</strong><br/>Position your company as a thought leader by delivering a standalone presentation or moderating a panel discussion to a pre-qualified audience comprising decision makers.</li>
+
+        <li><strong>Network &amp; Generate Leads</strong><br/>Optimize your networking opportunities by getting right in front of key decision makers that are prequalified based on seniority, budget availability and motivation to learn about latest technologies.</li>
+
+        <li><strong>Brand Positioning</strong><br/>Establish, strengthen and re-position your brand in front of CMOs, Heads of CX &amp; Loyalty who are looking to re-align and strengthen their CX &amp; Loyalty strategies.</li>
+      </ul>
+
+      <div class="sponsor-cta" style="margin-top:18px;">
+        <p>Are you interested to sponsor our event? To find out more about ROI-driven sponsorship and exhibition opportunities, contact us now:</p>
+        <p><strong>Phone:</strong> <a href="tel:+97142434677">+971 4 243 4677</a><br/>
+           <strong>Email:</strong> <a href="mailto:info@verve-management.com">info@verve-management.com</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="banner" aria-hidden="true"></section>
+
+    
+
+    <!-- TICKETS -->
+    <section id="tickets" class="section container" aria-label="Tickets">
+      <div class="section-head">
+        <h3>Tickets</h3>
+        <p class="muted">Choose a pass that fits your team</p>
+      </div>
+
+      <div class="pricing-grid" role="list">
+        <div class="card ticket-card recommended" role="listitem">
+          <div class="card-head"><h4>Delegate Pass</h4><p class="muted">Access to all sessions</p></div>
+          <div class="price">USD 899</div>
+          <ul class="perk-list">
+            <li>2 days access</li>
+            <li>Coffee breaks & lunch</li>
+            <li>Digital proceedings</li>
+          </ul>
+          <a class="btn primary" href="#register" data-scroll>Buy now</a>
+        </div>
+
+        <div class="card ticket-card" role="listitem">
+          <div class="card-head"><h4>Group Pass (3+)</h4><p class="muted">Team pricing</p></div>
+          <div class="price">USD 2,399</div>
+          <ul class="perk-list">
+            <li>3+ attendees</li>
+            <li>Discounted rate</li>
+            <li>Priority seating</li>
+          </ul>
+          <a class="btn ghost" href="#register" data-scroll>Buy now</a>
+        </div>
+
+        <div class="card ticket-card" role="listitem">
+          <div class="card-head"><h4>Workshop Pass</h4><p class="muted">Full-day workshops</p></div>
+          <div class="price">USD 499</div>
+          <ul class="perk-list">
+            <li>1 workshop</li>
+            <li>Hands-on</li>
+            <li>Limited seats</li>
+          </ul>
+          <a class="btn ghost" href="#register" data-scroll>Buy now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTER / CONTACT -->
+    <section id="contact" class="section container" aria-label="Register and contact">
+      <div class="section-head">
+        <h3 id="register">Register / Contact</h3>
+      </div>
+
+      <div class="grid-2">
+        <div class="register-card">
+          <h4>Register now</h4>
+          <form id="regForm">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Full name" required />
+              <input type="email" name="email" placeholder="Work email" required />
+            </div>
+            <div class="form-row">
+              <input type="text" name="company" placeholder="Company" />
+              <input type="text" name="role" placeholder="Role / Job title" />
+            </div>
+            <button class="btn primary" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="contact-card">
+          <h4>Contact</h4>
+          <p><strong>Phone:</strong> +971 4 243 4677</p>
+          <p><strong>Email:</strong> <a href="mailto:info@verve-management.com">info@verve-management.com</a></p>
+          <p class="muted">We'll contact you to confirm availability and pricing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SPEAKER MODAL -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Close dialog">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2023 CX &amp; Loyalty Summit MENA — Dubai, UAE</p>
+      
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
